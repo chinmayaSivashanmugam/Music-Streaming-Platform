@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+        
+        color: #1f2937;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    
+    form {
+      border: 3px solid #f1f1f1;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: center;
+    }
+
+    
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 8px ;
+      margin-bottom: 16px ;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+
+    button {
+      background-color: #008080;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    
+    button:hover {
+      opacity: 0.8;
+    }
+
+    
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+    }
+
+
+    img.music  {
+      width: 40%;
+      border-radius: 50%;
+    }
+
+
+    .container {
+      padding: 16px
+    }
+
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+  </style>
+</head>
+<body>
+    
+  <form action="action_page.php" method="post">
+    <div class="imgcontainer">
+    </div>
+    <background-image><img src="C:\Users\chinm\Downloads\james-stamler-153487-unsplash.jpg" alt="boy"></background-image>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:hsl(0, 0%, 95%)">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+
+  </form>
+</body>
+</html>
